@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'ISO3166_Example', :exclusive => true do
+  pod "ISO3166", :path => "../"
+end
+
+target 'ISO3166_Tests', :exclusive => true do
+  pod "ISO3166", :path => "../"
+
+  pod 'Quick', '~> 0.8.0'
+  pod 'Nimble', '3.0.0'
+end
