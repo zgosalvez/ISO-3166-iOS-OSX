@@ -1,0 +1,20 @@
+PODS:
+  - ISO3166 (0.1.0)
+  - Nimble (3.0.0)
+  - Quick (0.8.0)
+
+DEPENDENCIES:
+  - ISO3166 (from `../`)
+  - Nimble (= 3.0.0)
+  - Quick (~> 0.8.0)
+
+EXTERNAL SOURCES:
+  ISO3166:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ISO3166: b5cd7afdaeadef93a60b880e303fbf1415771013
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,25 @@
+{
+  "name": "ISO3166",
+  "version": "0.1.0",
+  "summary": "A short description of ISO3166.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/ISO3166",
+  "license": "MIT",
+  "authors": {
+    "Zennon Gosalvez": "zgosalvez@alumni.ateneo.edu"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/ISO3166.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "ISO3166": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
