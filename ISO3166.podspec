@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ISO3166"
-  s.version          = "0.1.0"
+  s.version          = "0.0.0"
   s.summary          = "A short description of ISO3166."
 
 # This description is used to generate tags and improve search results.
@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/ISO3166"
+  s.homepage         = "https://github.com/zgosalvez/ISO-3166-iOS-OSX"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Zennon Gosalvez" => "zgosalvez@alumni.ateneo.edu" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/ISO3166.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/zgosalvez/ISO-3166-iOS-OSX.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
