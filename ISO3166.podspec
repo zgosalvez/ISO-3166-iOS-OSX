@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "ISO3166"
   s.version          = "0.0.0"
-  s.summary          = "A short description of ISO3166."
+  s.summary          = "ISO 3166 Country Codes, includes codes for countries, codes for subdivisions, and formerly used codes."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Zennon Gosalvez" => "zgosalvez@alumni.ateneo.edu" }
   s.source           = { :git => "https://github.com/zgosalvez/ISO-3166-iOS-OSX.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/zgosalvez'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
