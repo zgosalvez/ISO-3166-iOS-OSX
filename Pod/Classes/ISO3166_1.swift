@@ -23,6 +23,14 @@ public class ISO3166_1 {
     
     private static let countryCodes = [
         [
+            ISO3166_1Alpha_2Code: "PH",
+            ISO3166_1Alpha_3Code: "PHL",
+            ISO3166_1NumericCode: 608,
+            ISO3166_1FullName: "the Republic of the Philippines",
+            ISO3166_1ShortName: "PHILIPPINES",
+            ISO3166_1ShortNameLowerCase: "Philippines (the)",
+        ],
+        [
             ISO3166_1Alpha_2Code: "US",
             ISO3166_1Alpha_3Code: "USA",
             ISO3166_1NumericCode: 840,

@@ -14,6 +14,12 @@ public class ISO3166_2 {
     
     private static let subdivisionCodes = [
         [
+            ISO3166_1Alpha_2Code: "PH",
+            ISO3166_2Code: "PH-00",
+            ISO3166_2SubdivisionCategory: "region",
+            ISO3166_2SubdivisionName: "National Capital Region",
+        ],
+        [
             ISO3166_1Alpha_2Code: "US",
             ISO3166_2Code: "US-CA",
             ISO3166_2SubdivisionCategory: "state",
