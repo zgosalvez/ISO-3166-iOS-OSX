@@ -45,6 +45,10 @@
 		7BFD25B1BB1116D8AC47E2C3874C5B76 /* ObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B922FF75D982F502B345AE30399F97 /* ObjCMatcher.swift */; };
 		7D0BE2E03C84F2F11956073DD266BB58 /* Pods-ISO3166_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF684C8C0D6ECC20718AF4894203C60D /* Pods-ISO3166_Example-dummy.m */; };
 		7DA9FF8513AA48310B15A0744A541818 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930275AC98E3FD0F3BC81A7D08B8591 /* SourceLocation.swift */; };
+		82E8AB2C1C48707100232DE1 /* CountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8AB281C48707100232DE1 /* CountryCode.swift */; };
+		82E8AB2D1C48707100232DE1 /* ISO3166_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8AB291C48707100232DE1 /* ISO3166_1.swift */; };
+		82E8AB2E1C48707100232DE1 /* ISO3166_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8AB2A1C48707100232DE1 /* ISO3166_2.swift */; };
+		82E8AB2F1C48707100232DE1 /* SubdivisionCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8AB2B1C48707100232DE1 /* SubdivisionCode.swift */; };
 		831D33A4C5C5BBC1EC158D9A236C61D7 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5596CB4CEA7B7B71461C9ECE75263656 /* NimbleXCTestHandler.swift */; };
 		8B5344A45F9C14EE7F67B5FE112FC4EE /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F0BEE5B67844F0E333920C2CB3416C /* SuiteHooks.swift */; };
 		8C7C243123720C6936A0B0ED1B36301C /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F8C281E400A6FABAD082CEA7263B2A /* ExampleHooks.swift */; };
@@ -56,7 +60,6 @@
 		98D5E8129DAD87523DD790B71C83C94C /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E0D7E2D11371A45CB3D1221E7B4EC2 /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D2E6397CC06D50DC270665C14761255 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDA3CDE7515A11BE56C6C2FE5FB65D8 /* World+DSL.swift */; };
 		9E7786C034F0E0A6B5F0A0E6BE7D7E4A /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE24AE8654BDA8234080C23F6335E26 /* BeEmpty.swift */; };
-		A210722797867024C60B29ADA679F806 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F03080D6EDBDD653372F907966125E /* ReplaceMe.swift */; };
 		A7E5AD3D5403DA7537389B4BF26BA23D /* NSString+QCKSelectorName.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F492985EB6550A418DD3DB1BCDE146 /* NSString+QCKSelectorName.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A963F4FF3C4695DF919B863125ACCD70 /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = E41A31E4949F1319040B8D2BBBF2B5D6 /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A985B236B93BD4C8E6D30CE42B76248C /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D6E41BA9F922E7BBD3A24B7E5D00A /* Callsite.swift */; };
@@ -162,7 +165,6 @@
 		38715BF4570032AE706B97AB11365E48 /* ExampleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleMetadata.swift; path = Quick/ExampleMetadata.swift; sourceTree = "<group>"; };
 		3F1975D001BFB447009180BAF8C14ADB /* Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-prefix.pch"; sourceTree = "<group>"; };
 		40FBD52025077E5788ADCE71EF040393 /* NMBExceptionCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBExceptionCapture.h; path = Nimble/objc/NMBExceptionCapture.h; sourceTree = "<group>"; };
-		43F03080D6EDBDD653372F907966125E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		4485234756A71944331668A71EFA8232 /* Pods-ISO3166_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISO3166_Tests-resources.sh"; sourceTree = "<group>"; };
 		465F8E556B69D71BF2E106BEF2F73C39 /* Pods_ISO3166_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISO3166_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4930275AC98E3FD0F3BC81A7D08B8591 /* SourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceLocation.swift; path = Nimble/Utils/SourceLocation.swift; sourceTree = "<group>"; };
@@ -189,6 +191,10 @@
 		77DB09D36FDCD6A0817F0AB20700EF47 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		784135A9193F0FE38182AF2C577B3A52 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Nimble/Nimble.h; sourceTree = "<group>"; };
 		7C07CB259CB51CAA2B1B59537C0A7C2C /* Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Quick.xcconfig; sourceTree = "<group>"; };
+		82E8AB281C48707100232DE1 /* CountryCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCode.swift; sourceTree = "<group>"; };
+		82E8AB291C48707100232DE1 /* ISO3166_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO3166_1.swift; sourceTree = "<group>"; };
+		82E8AB2A1C48707100232DE1 /* ISO3166_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO3166_2.swift; sourceTree = "<group>"; };
+		82E8AB2B1C48707100232DE1 /* SubdivisionCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubdivisionCode.swift; sourceTree = "<group>"; };
 		8487245080A1AB0FFD48288B814AEA82 /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Quick/World.swift; sourceTree = "<group>"; };
 		88457B3A5C81E0F34AC48AC05B8040D6 /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
 		8880B82EFD81A0D6EE2BBD27A39D61BA /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Quick/QuickSpec.h; sourceTree = "<group>"; };
@@ -432,7 +438,10 @@
 		8715C7C2DE56AA31557982955F4AC459 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				43F03080D6EDBDD653372F907966125E /* ReplaceMe.swift */,
+				82E8AB281C48707100232DE1 /* CountryCode.swift */,
+				82E8AB291C48707100232DE1 /* ISO3166_1.swift */,
+				82E8AB2A1C48707100232DE1 /* ISO3166_2.swift */,
+				82E8AB2B1C48707100232DE1 /* SubdivisionCode.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -724,7 +733,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -773,7 +782,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8A0F8360BAC72F585C5084456B45C92 /* ISO3166-dummy.m in Sources */,
-				A210722797867024C60B29ADA679F806 /* ReplaceMe.swift in Sources */,
+				82E8AB2D1C48707100232DE1 /* ISO3166_1.swift in Sources */,
+				82E8AB2E1C48707100232DE1 /* ISO3166_2.swift in Sources */,
+				82E8AB2C1C48707100232DE1 /* CountryCode.swift in Sources */,
+				82E8AB2F1C48707100232DE1 /* SubdivisionCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1154,6 +1166,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6BFDAA816A46A657F22D8E3FC5DF508F /* ISO3166.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1268,6 +1281,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6BFDAA816A46A657F22D8E3FC5DF508F /* ISO3166.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
