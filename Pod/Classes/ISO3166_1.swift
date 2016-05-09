@@ -6,53 +6,61 @@
 //
 //
 
-let ISO3166_1Alpha_2Code = "Alpha-2 code"
-let ISO3166_1Alpha_3Code = "Alpha-3 code"
-let ISO3166_1FullName = "Full name"
-let ISO3166_1NumericCode = "Numeric code"
-let ISO3166_1ShortName = "Short name"
-let ISO3166_1ShortNameLowerCase = "Short name lower case"
-
 public class ISO3166_1 {
     
     public enum CodeType: String {
         case Alpha_2 = "Alpha-2 code"
         case Alpha_3 = "Alpha-3 code"
-        case Numeric_3 = "Numeric code"
+        case Numeric = "Numeric code"
     }
     
-    private static let countryCodes = [
-        [
-            ISO3166_1Alpha_2Code: "PH",
-            ISO3166_1Alpha_3Code: "PHL",
-            ISO3166_1NumericCode: 608,
-            ISO3166_1FullName: "the Republic of the Philippines",
-            ISO3166_1ShortName: "PHILIPPINES",
-            ISO3166_1ShortNameLowerCase: "Philippines (the)",
-        ],
-        [
-            ISO3166_1Alpha_2Code: "US",
-            ISO3166_1Alpha_3Code: "USA",
-            ISO3166_1NumericCode: 840,
-            ISO3166_1FullName: "the United States of America",
-            ISO3166_1ShortName: "UNITED STATES OF AMERICA",
-            ISO3166_1ShortNameLowerCase: "United States of America (the)",
-        ],
+    public static let countryCodes = [
+        CountryCode(alpha_2Code: "AU",
+            alpha_3Code: "AUS",
+            numericCode: 036,
+            fullName: nil,
+            shortName: "AUSTRALIA",
+            shortNameLowerCase: "Australia",
+            emoji: "🇦🇺"),
+        CountryCode(alpha_2Code: "CA",
+            alpha_3Code: "CAN",
+            numericCode: 124,
+            fullName: nil,
+            shortName: "CANADA",
+            shortNameLowerCase: "Canada",
+            emoji: "🇨🇦"),
+        CountryCode(alpha_2Code: "PH",
+            alpha_3Code: "PHL",
+            numericCode: 608,
+            fullName: "the Republic of the Philippines",
+            shortName: "PHILIPPINES",
+            shortNameLowerCase: "Philippines (the)",
+            emoji: "🇵🇭"),
+        CountryCode(alpha_2Code: "US",
+            alpha_3Code: "USA",
+            numericCode: 840,
+            fullName: "the United States of America",
+            shortName: "UNITED STATES OF AMERICA",
+            shortNameLowerCase: "United States of America (the)",
+            emoji: "🇺🇸"),
     ]
     
-    public class func countryCodeFromCode(code: String, ofType type: CodeType) -> CountryCode? {
+    public class func countryCodeFromCode(code: AnyObject, ofType type: CodeType) -> CountryCode? {
         for countryCode in countryCodes {
-            if code == countryCode[type.rawValue] {
-                var countryCodeStructure = CountryCode()
+            var countryCodeFound: CountryCode?
+            
+            switch  type {
+            case .Alpha_2 where countryCode.alpha_2Code == code as? String:
+                fallthrough
                 
-                countryCodeStructure.alpha_2Code = countryCode[ISO3166_1Alpha_2Code] as? String
-                countryCodeStructure.alpha_3Code = countryCode[ISO3166_1Alpha_3Code] as? String
-                countryCodeStructure.numericCode = countryCode[ISO3166_1NumericCode] as? Int
-                countryCodeStructure.fullName = countryCode[ISO3166_1FullName] as? String
-                countryCodeStructure.shortName = countryCode[ISO3166_1ShortName] as? String
-                countryCodeStructure.shortNameLowerCase = countryCode[ISO3166_1ShortNameLowerCase] as? String
+            case .Alpha_3 where countryCode.alpha_3Code == code as? String:
+                fallthrough
                 
-                return countryCodeStructure
+            case .Numeric where countryCode.numericCode == code as? Int:
+                return countryCode
+                
+            default:
+                break
             }
         }
         
