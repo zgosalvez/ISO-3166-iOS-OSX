@@ -47,8 +47,6 @@ public class ISO3166_1 {
     
     public class func countryCodeFromCode(code: AnyObject, ofType type: CodeType) -> CountryCode? {
         for countryCode in countryCodes {
-            var countryCodeFound: CountryCode?
-            
             switch  type {
             case .Alpha_2 where countryCode.alpha_2Code == code as? String:
                 fallthrough
