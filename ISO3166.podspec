@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "ISO3166"
   s.version          = "0.0.0"
-  s.summary          = "ISO 3166 Country Codes, includes codes for countries, codes for subdivisions, and formerly used codes."
+  s.summary          = "ISO 3166 Country Codes: codes for countries, codes for subdivisions, and formerly used codes."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+This project includes ISO 3166 Country Codes, specifically codes for countries, codes for subdivisions, and formerly used codes.
                        DESC
 
   s.homepage         = "https://github.com/zgosalvez/ISO-3166-iOS-OSX"
