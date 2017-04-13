@@ -45,7 +45,7 @@ open class ISO3166_1 {
             emoji: "🇺🇸"),
     ]
     
-    open class func countryCodeFromCode(_ code: String, ofType type: CodeType) -> CountryCode? {
+    open class func countryCodeFromCode(_ code: Any, ofType type: CodeType) -> CountryCode? {
         for countryCode in countryCodes {
             switch  type {
             case .Alpha_2 where countryCode.alpha_2Code == code as? String:
