@@ -6,9 +6,9 @@
 //
 //
 
-public class ISO3166_2 {
+open class ISO3166_2 {
     
-    public static let subdivisionCodes = [
+    open static let subdivisionCodes = [
         SubdivisionCode(ISO3166_1Alpha_2Code: "PH",
             code: "PH-00",
             category: "region",
@@ -502,7 +502,7 @@ public class ISO3166_2 {
             parentSubdivisionCode: "PH-09"),
     ]
     
-    public class func subdivisionCodeFromCode(code: String) -> SubdivisionCode? {
+    open class func subdivisionCodeFromCode(_ code: String) -> SubdivisionCode? {
         for subdivisionCode in subdivisionCodes {
             if subdivisionCode.code == code {
                 return subdivisionCode

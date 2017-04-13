@@ -17,7 +17,7 @@ public struct CountryCode {
     
     public var shorterNameLowerCase: String? {
         return shortNameLowerCase?
-            .stringByReplacingOccurrencesOfString(" (the)", withString: "")
+            .replacingOccurrences(of: " (the)", with: "")
     }
     
     init(

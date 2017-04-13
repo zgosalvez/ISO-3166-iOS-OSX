@@ -6,7 +6,7 @@
 //
 //
 
-public class ISO3166_1 {
+open class ISO3166_1 {
     
     public enum CodeType: String {
         case Alpha_2 = "Alpha-2 code"
@@ -14,7 +14,7 @@ public class ISO3166_1 {
         case Numeric = "Numeric code"
     }
     
-    public static let countryCodes = [
+    open static let countryCodes = [
         CountryCode(alpha_2Code: "AU",
             alpha_3Code: "AUS",
             numericCode: 036,
@@ -45,7 +45,7 @@ public class ISO3166_1 {
             emoji: "🇺🇸"),
     ]
     
-    public class func countryCodeFromCode(code: AnyObject, ofType type: CodeType) -> CountryCode? {
+    open class func countryCodeFromCode(_ code: String, ofType type: CodeType) -> CountryCode? {
         for countryCode in countryCodes {
             switch  type {
             case .Alpha_2 where countryCode.alpha_2Code == code as? String:
