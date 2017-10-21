@@ -54,7 +54,21 @@ public enum Subdivision: String, Codable {
         self.init(rawValue: code.replacingOccurrences(of: "-", with: "_"))
     }
 
-    private func fetchFromDictionary(withKey key: String) -> Any {
+    public var subdivisions: [Subdivision] {
+        let keys = (country.fetchFromDictionary(withKey: "subdivisions") as! [String: Any]).keys
+        var subdivisions = [Subdivision]()
+
+        for key in keys {
+            if let subdivision = Subdivision(rawValue: "\(rawValue)_\(key)"),
+                subdivision.parent == self {
+                subdivisions.append(subdivision)
+            }
+        }
+
+        return subdivisions
+    }
+
+    internal func fetchFromDictionary(withKey key: String) -> Any {
         let countryPath = Bundle.main.path(forResource: country.rawValue, ofType: "plist")!
         let countryDictionary = NSDictionary(contentsOfFile: countryPath) as! [String: Any]
         let index = rawValue.index(rawValue.startIndex, offsetBy: 3)

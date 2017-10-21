@@ -58,13 +58,16 @@ public enum Country: String, Codable {
         var subdivisions = [Subdivision]()
 
         for key in keys {
-            subdivisions.append(Subdivision(rawValue: "\(rawValue)_\(key)")!)
+            if let subdivision = Subdivision(rawValue: "\(rawValue)_\(key)"),
+                subdivision.parent == nil {
+                subdivisions.append(subdivision)
+            }
         }
 
         return subdivisions
     }
 
-    private func fetchFromDictionary(withKey key: String) -> Any {
+    internal func fetchFromDictionary(withKey key: String) -> Any {
         let countryPath = Bundle.main.path(forResource: rawValue, ofType: "plist")!
         let countryDictionary = NSDictionary(contentsOfFile: countryPath) as! [String: Any]
         return countryDictionary[key]!
