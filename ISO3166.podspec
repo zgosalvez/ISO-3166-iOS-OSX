@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ISO3166"
-  s.version          = "2.1.0"
+  s.version          = "2.2.0"
   s.summary          = "ISO 3166 Country Codes: codes for countries, codes for subdivisions, and formerly used codes."
 
 # This description is used to generate tags and improve search results.
@@ -31,10 +31,9 @@ This project includes ISO 3166 Country Codes, specifically codes for countries, 
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resources    = 'Pod/Data Source Files/*'
-  # s.resource_bundles = {
-  #   'ISO3166' => ['Pod/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'ISO3166' => ['Pod/Data Source Files/*']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
