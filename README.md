@@ -1,6 +1,6 @@
 # ISO3166
 
-[![CI Status](http://img.shields.io/travis/Zennon Gosalvez/ISO3166.svg?style=flat)](https://travis-ci.org/Zennon Gosalvez/ISO3166)
+[![CI Status](http://img.shields.io/travis/zgosalvez/ISO3166.svg?style=flat)](https://travis-ci.org/zgosalvez/ISO3166)
 [![Version](https://img.shields.io/cocoapods/v/ISO3166.svg?style=flat)](http://cocoapods.org/pods/ISO3166)
 [![License](https://img.shields.io/cocoapods/l/ISO3166.svg?style=flat)](http://cocoapods.org/pods/ISO3166)
 [![Platform](https://img.shields.io/cocoapods/p/ISO3166.svg?style=flat)](http://cocoapods.org/pods/ISO3166)

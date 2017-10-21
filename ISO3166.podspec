@@ -31,6 +31,7 @@ This project includes ISO 3166 Country Codes, specifically codes for countries, 
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
+  s.resources    = 'Pod/Data Source Files/*'
   # s.resource_bundles = {
   #   'ISO3166' => ['Pod/Assets/*.png']
   # }

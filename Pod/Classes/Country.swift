@@ -1,12 +1,12 @@
 //
-//  CountryCode.swift
+//  Country.swift
 //  Pods
 //
 //  Created by Zennon Jean S. Gosalvez on 2016-01-14.
 //
 //
 
-public enum Country: String {
+public enum Country: String, Codable {
     case AU, CA, PH, US
 
     /// A two-letter code that represents a country name, recommended as the

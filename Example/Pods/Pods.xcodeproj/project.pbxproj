@@ -439,6 +439,17 @@
 			);
 			sourceTree = "<group>";
 		};
+		82042CE41F9B299600976AD1 /* Data Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				821D9E1F1F9AF13500217829 /* AU.plist */,
+				82042CDE1F9B10E000976AD1 /* CA.plist */,
+				82042CE01F9B113100976AD1 /* PH.plist */,
+				82042CE21F9B115900976AD1 /* US.plist */,
+			);
+			path = "Data Source Files";
+			sourceTree = "<group>";
+		};
 		8715C7C2DE56AA31557982955F4AC459 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -469,10 +480,6 @@
 		8EF05354A742ED752DCEDF0260F0D66D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				821D9E1F1F9AF13500217829 /* AU.plist */,
-				82042CDE1F9B10E000976AD1 /* CA.plist */,
-				82042CE01F9B113100976AD1 /* PH.plist */,
-				82042CE21F9B115900976AD1 /* US.plist */,
 				00FF43970B32B4CEC6A1259AC8D63791 /* Info.plist */,
 				A3EC98479470457EC4221BAD11669CAA /* ISO3166.modulemap */,
 				6BFDAA816A46A657F22D8E3FC5DF508F /* ISO3166.xcconfig */,
@@ -556,6 +563,7 @@
 		E7C68CC2EE731749AC9283F040616E4B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
+				82042CE41F9B299600976AD1 /* Data Source Files */,
 				8715C7C2DE56AA31557982955F4AC459 /* Classes */,
 			);
 			path = Pod;
