@@ -69,7 +69,8 @@ public enum Subdivision: String, Codable {
     }
 
     internal func fetchFromDictionary(withKey key: String) -> Any {
-        let countryPath = Bundle.main.path(forResource: country.rawValue, ofType: "plist")!
+        let countryPath = BundleController.shared.bundle
+            .path(forResource: country.rawValue, ofType: "plist")!
         let countryDictionary = NSDictionary(contentsOfFile: countryPath) as! [String: Any]
         let index = rawValue.index(rawValue.startIndex, offsetBy: 3)
         return countryDictionary[String(rawValue[index...])]!

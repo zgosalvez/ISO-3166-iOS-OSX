@@ -51,6 +51,7 @@
 		821D9E201F9AF13500217829 /* AU.plist in Resources */ = {isa = PBXBuildFile; fileRef = 821D9E1F1F9AF13500217829 /* AU.plist */; };
 		82E8AB2C1C48707100232DE1 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8AB281C48707100232DE1 /* Country.swift */; };
 		82E8AB2F1C48707100232DE1 /* Subdivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8AB2B1C48707100232DE1 /* Subdivision.swift */; };
+		82FE748F1F9B403F00D6D91D /* BundleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE748E1F9B403F00D6D91D /* BundleController.swift */; };
 		831D33A4C5C5BBC1EC158D9A236C61D7 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5596CB4CEA7B7B71461C9ECE75263656 /* NimbleXCTestHandler.swift */; };
 		8B5344A45F9C14EE7F67B5FE112FC4EE /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F0BEE5B67844F0E333920C2CB3416C /* SuiteHooks.swift */; };
 		8C7C243123720C6936A0B0ED1B36301C /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F8C281E400A6FABAD082CEA7263B2A /* ExampleHooks.swift */; };
@@ -199,6 +200,7 @@
 		821D9E1F1F9AF13500217829 /* AU.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AU.plist; sourceTree = "<group>"; };
 		82E8AB281C48707100232DE1 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		82E8AB2B1C48707100232DE1 /* Subdivision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subdivision.swift; sourceTree = "<group>"; };
+		82FE748E1F9B403F00D6D91D /* BundleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleController.swift; sourceTree = "<group>"; };
 		8487245080A1AB0FFD48288B814AEA82 /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Quick/World.swift; sourceTree = "<group>"; };
 		88457B3A5C81E0F34AC48AC05B8040D6 /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
 		8880B82EFD81A0D6EE2BBD27A39D61BA /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Quick/QuickSpec.h; sourceTree = "<group>"; };
@@ -453,6 +455,7 @@
 		8715C7C2DE56AA31557982955F4AC459 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				82FE748E1F9B403F00D6D91D /* BundleController.swift */,
 				82E8AB281C48707100232DE1 /* Country.swift */,
 				82E8AB2B1C48707100232DE1 /* Subdivision.swift */,
 			);
@@ -804,6 +807,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FE748F1F9B403F00D6D91D /* BundleController.swift in Sources */,
 				E8A0F8360BAC72F585C5084456B45C92 /* ISO3166-dummy.m in Sources */,
 				82E8AB2C1C48707100232DE1 /* Country.swift in Sources */,
 				82E8AB2F1C48707100232DE1 /* Subdivision.swift in Sources */,
