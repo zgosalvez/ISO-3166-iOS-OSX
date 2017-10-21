@@ -45,10 +45,12 @@
 		7BFD25B1BB1116D8AC47E2C3874C5B76 /* ObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B922FF75D982F502B345AE30399F97 /* ObjCMatcher.swift */; };
 		7D0BE2E03C84F2F11956073DD266BB58 /* Pods-ISO3166_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF684C8C0D6ECC20718AF4894203C60D /* Pods-ISO3166_Example-dummy.m */; };
 		7DA9FF8513AA48310B15A0744A541818 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930275AC98E3FD0F3BC81A7D08B8591 /* SourceLocation.swift */; };
-		82E8AB2C1C48707100232DE1 /* CountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8AB281C48707100232DE1 /* CountryCode.swift */; };
-		82E8AB2D1C48707100232DE1 /* ISO3166_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8AB291C48707100232DE1 /* ISO3166_1.swift */; };
-		82E8AB2E1C48707100232DE1 /* ISO3166_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8AB2A1C48707100232DE1 /* ISO3166_2.swift */; };
-		82E8AB2F1C48707100232DE1 /* SubdivisionCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8AB2B1C48707100232DE1 /* SubdivisionCode.swift */; };
+		82042CDF1F9B10E000976AD1 /* CA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82042CDE1F9B10E000976AD1 /* CA.plist */; };
+		82042CE11F9B113100976AD1 /* PH.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82042CE01F9B113100976AD1 /* PH.plist */; };
+		82042CE31F9B115900976AD1 /* US.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82042CE21F9B115900976AD1 /* US.plist */; };
+		821D9E201F9AF13500217829 /* AU.plist in Resources */ = {isa = PBXBuildFile; fileRef = 821D9E1F1F9AF13500217829 /* AU.plist */; };
+		82E8AB2C1C48707100232DE1 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8AB281C48707100232DE1 /* Country.swift */; };
+		82E8AB2F1C48707100232DE1 /* Subdivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8AB2B1C48707100232DE1 /* Subdivision.swift */; };
 		831D33A4C5C5BBC1EC158D9A236C61D7 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5596CB4CEA7B7B71461C9ECE75263656 /* NimbleXCTestHandler.swift */; };
 		8B5344A45F9C14EE7F67B5FE112FC4EE /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F0BEE5B67844F0E333920C2CB3416C /* SuiteHooks.swift */; };
 		8C7C243123720C6936A0B0ED1B36301C /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F8C281E400A6FABAD082CEA7263B2A /* ExampleHooks.swift */; };
@@ -191,10 +193,12 @@
 		77DB09D36FDCD6A0817F0AB20700EF47 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		784135A9193F0FE38182AF2C577B3A52 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Nimble/Nimble.h; sourceTree = "<group>"; };
 		7C07CB259CB51CAA2B1B59537C0A7C2C /* Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Quick.xcconfig; sourceTree = "<group>"; };
-		82E8AB281C48707100232DE1 /* CountryCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCode.swift; sourceTree = "<group>"; };
-		82E8AB291C48707100232DE1 /* ISO3166_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO3166_1.swift; sourceTree = "<group>"; };
-		82E8AB2A1C48707100232DE1 /* ISO3166_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO3166_2.swift; sourceTree = "<group>"; };
-		82E8AB2B1C48707100232DE1 /* SubdivisionCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubdivisionCode.swift; sourceTree = "<group>"; };
+		82042CDE1F9B10E000976AD1 /* CA.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CA.plist; sourceTree = "<group>"; };
+		82042CE01F9B113100976AD1 /* PH.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PH.plist; sourceTree = "<group>"; };
+		82042CE21F9B115900976AD1 /* US.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = US.plist; sourceTree = "<group>"; };
+		821D9E1F1F9AF13500217829 /* AU.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AU.plist; sourceTree = "<group>"; };
+		82E8AB281C48707100232DE1 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		82E8AB2B1C48707100232DE1 /* Subdivision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subdivision.swift; sourceTree = "<group>"; };
 		8487245080A1AB0FFD48288B814AEA82 /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Quick/World.swift; sourceTree = "<group>"; };
 		88457B3A5C81E0F34AC48AC05B8040D6 /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
 		8880B82EFD81A0D6EE2BBD27A39D61BA /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Quick/QuickSpec.h; sourceTree = "<group>"; };
@@ -438,10 +442,8 @@
 		8715C7C2DE56AA31557982955F4AC459 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				82E8AB281C48707100232DE1 /* CountryCode.swift */,
-				82E8AB291C48707100232DE1 /* ISO3166_1.swift */,
-				82E8AB2A1C48707100232DE1 /* ISO3166_2.swift */,
-				82E8AB2B1C48707100232DE1 /* SubdivisionCode.swift */,
+				82E8AB281C48707100232DE1 /* Country.swift */,
+				82E8AB2B1C48707100232DE1 /* Subdivision.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -467,6 +469,10 @@
 		8EF05354A742ED752DCEDF0260F0D66D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				821D9E1F1F9AF13500217829 /* AU.plist */,
+				82042CDE1F9B10E000976AD1 /* CA.plist */,
+				82042CE01F9B113100976AD1 /* PH.plist */,
+				82042CE21F9B115900976AD1 /* US.plist */,
 				00FF43970B32B4CEC6A1259AC8D63791 /* Info.plist */,
 				A3EC98479470457EC4221BAD11669CAA /* ISO3166.modulemap */,
 				6BFDAA816A46A657F22D8E3FC5DF508F /* ISO3166.xcconfig */,
@@ -734,10 +740,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0900;
 				TargetAttributes = {
 					D0B1083F473677AD8F4DBFEA00BB8623 = {
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -776,6 +782,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A1B6AF41CB5FFB099AF86B7558BBE48 /* ISO3166.bundle in Resources */,
+				82042CDF1F9B10E000976AD1 /* CA.plist in Resources */,
+				82042CE11F9B113100976AD1 /* PH.plist in Resources */,
+				821D9E201F9AF13500217829 /* AU.plist in Resources */,
+				82042CE31F9B115900976AD1 /* US.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,10 +797,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8A0F8360BAC72F585C5084456B45C92 /* ISO3166-dummy.m in Sources */,
-				82E8AB2D1C48707100232DE1 /* ISO3166_1.swift in Sources */,
-				82E8AB2E1C48707100232DE1 /* ISO3166_2.swift in Sources */,
-				82E8AB2C1C48707100232DE1 /* CountryCode.swift in Sources */,
-				82E8AB2F1C48707100232DE1 /* SubdivisionCode.swift in Sources */,
+				82E8AB2C1C48707100232DE1 /* Country.swift in Sources */,
+				82E8AB2F1C48707100232DE1 /* Subdivision.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,7 +937,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D73DAFEFC2CD23497EC9DBB497B8799 /* Pods-ISO3166_Tests.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -965,18 +974,28 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -986,6 +1005,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1007,7 +1027,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F8243A00D4B9FE09AE827BF1711BCF6 /* Pods-ISO3166_Example.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1039,7 +1060,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B68A276C05A93CFCC331A055BCA33167 /* Nimble.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1068,7 +1089,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B68A276C05A93CFCC331A055BCA33167 /* Nimble.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1096,7 +1117,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7C07CB259CB51CAA2B1B59537C0A7C2C /* Quick.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1129,19 +1150,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1178,7 +1209,7 @@
 			baseConfigurationReference = 6BFDAA816A46A657F22D8E3FC5DF508F /* ISO3166.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1196,7 +1227,7 @@
 				PRODUCT_NAME = ISO3166;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1207,7 +1238,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BAFC557E3EB28EB37DFFAEE4779D3DAA /* Pods-ISO3166_Example.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1238,7 +1270,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9CE6AA5D9CE8173AEFFC639EA92878C7 /* Pods-ISO3166_Tests.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1269,7 +1302,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7C07CB259CB51CAA2B1B59537C0A7C2C /* Quick.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1298,7 +1331,7 @@
 			baseConfigurationReference = 6BFDAA816A46A657F22D8E3FC5DF508F /* ISO3166.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1317,7 +1350,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
