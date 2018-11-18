@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ISO3166"
-  s.version          = "2.3.0"
+  s.version          = "2.3.1"
   s.summary          = "ISO 3166 Country Codes: codes for countries, codes for subdivisions, and formerly used codes."
 
 # This description is used to generate tags and improve search results.
