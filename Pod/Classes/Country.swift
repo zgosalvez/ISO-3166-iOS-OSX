@@ -68,9 +68,6 @@ public enum Country: String, Codable {
     }
 
     internal func fetchFromDictionary(withKey key: String) -> Any {
-        let countryPath = BundleController.shared.bundle
-            .path(forResource: rawValue, ofType: "plist")!
-        let countryDictionary = NSDictionary(contentsOfFile: countryPath) as! [String: Any]
-        return countryDictionary[key]!
+        return BundleController.shared.countryDictionary(country: self)[key]!
     }
 }

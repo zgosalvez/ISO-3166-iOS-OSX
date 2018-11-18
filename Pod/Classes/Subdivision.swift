@@ -48,7 +48,7 @@ public enum Subdivision: String, Codable {
             return nil
         }
 
-        return Subdivision(rawValue: parent)
+        return Subdivision(rawValue: "\(country.rawValue)_\(parent)")
     }
 
     public init?(code: String) {
@@ -69,11 +69,14 @@ public enum Subdivision: String, Codable {
         return subdivisions
     }
 
-    internal func fetchFromDictionary(withKey key: String) -> Any {
-        let countryPath = BundleController.shared.bundle
-            .path(forResource: country.rawValue, ofType: "plist")!
-        let countryDictionary = NSDictionary(contentsOfFile: countryPath) as! [String: Any]
+    internal func fetchFromDictionary(withKey key: String) -> Any? {
+        let countryDictionary = BundleController.shared
+            .countryDictionary(country: country)
+        let subdivisionDictionary = countryDictionary["subdivisions"]
+            as! [String: Any]
         let index = rawValue.index(rawValue.startIndex, offsetBy: 3)
-        return countryDictionary[String(rawValue[index...])]!
+        let substring = String(rawValue[index...])
+        let subdivision = subdivisionDictionary[substring] as! [String: Any]
+        return subdivision[key]
     }
 }
