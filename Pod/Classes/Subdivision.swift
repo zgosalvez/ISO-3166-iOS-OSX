@@ -33,20 +33,19 @@ public enum Subdivision: String, Codable {
     }
 
     public var category: String {
-        return fetchFromDictionary(withKey: "category") as! String
+        return DataController.shared.subdivisions[self]!.category
     }
 
     public var name: String {
-        let name = fetchFromDictionary(withKey: "name") as! [String: String]
+        let name = DataController.shared.subdivisions[self]!.name
         let preferredLanguage = Locale.preferredLanguages.first ?? "en"
 
         return name[preferredLanguage] ?? name["en"]!
     }
 
     public var parent: Subdivision? {
-        guard let parent = fetchFromDictionary(withKey: "parent") as? String else {
-            return nil
-        }
+        guard let parent = DataController.shared.subdivisions[self]!.parent
+            else { return nil }
 
         return Subdivision(rawValue: "\(country.rawValue)_\(parent)")
     }
@@ -56,27 +55,8 @@ public enum Subdivision: String, Codable {
     }
 
     public var subdivisions: [Subdivision] {
-        let keys = (country.fetchFromDictionary(withKey: "subdivisions") as! [String: Any]).keys
-        var subdivisions = [Subdivision]()
-
-        for key in keys {
-            if let subdivision = Subdivision(rawValue: "\(rawValue)_\(key)"),
-                subdivision.parent == self {
-                subdivisions.append(subdivision)
-            }
-        }
-
-        return subdivisions
-    }
-
-    internal func fetchFromDictionary(withKey key: String) -> Any? {
-        let countryDictionary = BundleController.shared
-            .countryDictionary(country: country)
-        let subdivisionDictionary = countryDictionary["subdivisions"]
-            as! [String: Any]
-        let index = rawValue.index(rawValue.startIndex, offsetBy: 3)
-        let substring = String(rawValue[index...])
-        let subdivision = subdivisionDictionary[substring] as! [String: Any]
-        return subdivision[key]
+        return DataController.shared.subdivisions.keys
+            .filter { $0.code.starts(with: country.alpha2Code) && $0.parent == self }
+            .sorted { $0.code < $1.code }
     }
 }

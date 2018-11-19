@@ -18,7 +18,7 @@ public enum Country: String, Codable {
     /// A three-letter code that represents a country name, which is usually
     /// more closely related to the country name
     public var alpha3Code: String {
-        return fetchFromDictionary(withKey: "alpha3Code") as! String
+        return DataController.shared.countries[self]!.alpha3Code
     }
 
     /// A four-letter code that represents a country name that is no longer in
@@ -38,36 +38,24 @@ public enum Country: String, Codable {
     /// Yemen Arab Republic (YE) merged into the Republic of Yemen (YE) in 1990.
     /// The code element used for the formerly used country name Democratic
     /// Yemen is YDYE.
-    public var alpha4Code: String {
-        return fetchFromDictionary(withKey: "alpha4Code") as! String
+    public var alpha4Code: String? {
+        return DataController.shared.countries[self]!.alpha4Code
     }
 
     /// A three digit numeric code which can be useful to avoid using Latin
     /// script.
     public var numericCode: String {
-        return fetchFromDictionary(withKey: "numericCode") as! String
+        return DataController.shared.countries[self]!.numericCode
     }
 
     /// An emoji representing the flag of the country
-    public var emoji: String? {
-        return fetchFromDictionary(withKey: "emoji") as? String
+    public var emoji: String {
+        return DataController.shared.countries[self]!.emoji
     }
 
     public var subdivisions: [Subdivision] {
-        let keys = (fetchFromDictionary(withKey: "subdivisions") as! [String: Any]).keys
-        var subdivisions = [Subdivision]()
-
-        for key in keys {
-            if let subdivision = Subdivision(rawValue: "\(rawValue)_\(key)"),
-                subdivision.parent == nil {
-                subdivisions.append(subdivision)
-            }
-        }
-
-        return subdivisions
-    }
-
-    internal func fetchFromDictionary(withKey key: String) -> Any {
-        return BundleController.shared.countryDictionary(country: self)[key]!
+        return DataController.shared.subdivisions.keys
+            .filter { $0.code.starts(with: rawValue) && $0.parent == nil }
+            .sorted { $0.code < $1.code }
     }
 }
