@@ -16,7 +16,14 @@ class DataController {
         ] = [
             .AU: (alpha3Code: "AUS", alpha4Code: nil, numericCode: "036", emoji: "🇦🇺"),
             .CA: (alpha3Code: "CAN", alpha4Code: nil, numericCode: "124", emoji: "🇨🇦"),
+            .DE: (alpha3Code: "DEU", alpha4Code: nil, numericCode: "276", emoji: "🇩🇪"),
+            .ES: (alpha3Code: "ESP", alpha4Code: nil, numericCode: "724", emoji: "🇪🇸"),
+            .GB: (alpha3Code: "GBR", alpha4Code: nil, numericCode: "826", emoji: "🇬🇧"),
+            .ID: (alpha3Code: "IDN", alpha4Code: nil, numericCode: "360", emoji: "🇮🇩"),
+            .JP: (alpha3Code: "JPN", alpha4Code: nil, numericCode: "392", emoji: "🇯🇵"),
+            .MX: (alpha3Code: "MEX", alpha4Code: nil, numericCode: "484", emoji: "🇲🇽"),
             .PH: (alpha3Code: "PHL", alpha4Code: nil, numericCode: "608", emoji: "🇵🇭"),
+            .TW: (alpha3Code: "TWN", alpha4Code: nil, numericCode: "158", emoji: "🇹🇼"),
             .US: (alpha3Code: "USA", alpha4Code: nil, numericCode: "840", emoji: "🇺🇸"),
             ]
 

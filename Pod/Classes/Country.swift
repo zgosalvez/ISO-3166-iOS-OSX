@@ -7,7 +7,7 @@
 //
 
 public enum Country: String, Codable {
-    case AU, CA, PH, US
+    case AU, CA, DE, ES, GB, ID, JP, MX, PH, TW, US
 
     /// A two-letter code that represents a country name, recommended as the
     /// general purpose code
